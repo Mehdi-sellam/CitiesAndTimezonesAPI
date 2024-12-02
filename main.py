@@ -23,7 +23,7 @@ def index1(world):
 def get_cities2():
     results = []
     headers = {
-        "X-Api-Key": "eOuHlh7/rbQWCg04C3pzBw==OLtokvYuIhzZui0v"  # Replace with your actual API key
+        "X-Api-Key": "your-API-key"  # Replace with your actual API key
     }
     for city in db:
         r = requests.get(f'https://api.api-ninjas.com/v1/worldtime?timezone={city["timezone"]}', headers=headers)
